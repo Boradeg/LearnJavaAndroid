@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="horizontal"
+                android:id="@+id/tool_layout3"
+                android:background="@drawable/background_curved2"
+                tools:ignore="MissingConstraints">
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/layout5"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/student_photo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/pro" />
+                <TextView
+                    android:id="@+id/tv_full_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gokul Borade"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:layout_below="@id/student_photo"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/background_card_gredient_color2"
+                android:layout_marginTop="25dp"
+                android:elevation="60dp"
+                android:id="@+id/view9"
+                android:layout_below="@+id/layout5"
+                android:paddingVertical="40dp"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/l0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Register Number :"
+                        android:textColor="@color/tab_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_reg_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:text="NA"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/vi0"
+                    android:layout_below="@id/l0"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/grey10"
+                    />
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/vi0"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/father"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Father Name :"
+                        android:textColor="@color/tab_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_father_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:padding="5dp"
+                        android:text="NA"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/vi1"
+                    android:layout_below="@id/l1"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/grey10"
+                    />
+                <LinearLayout
+                    android:layout_below="@+id/vi1"
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Mother Name :"
+                        android:textColor="@color/tab_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_mother_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="NA"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/vi2"
+                    android:layout_below="@id/l2"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/grey10"
+                    />
+                <LinearLayout
+                    android:layout_below="@+id/vi2"
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Date Of Birth :"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/tab_color"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="5dp"
+                        android:text="NA"
+                        android:layout_marginEnd="5dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/vi3"
+                    android:layout_below="@id/l3"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/grey10"
+                    />
+                <LinearLayout
+                    android:layout_below="@+id/vi3"
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Address :"
+                        android:textColor="@color/tab_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="NA"
+                        android:layout_marginEnd="5dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/vi4"
+                    android:layout_below="@id/l4"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/grey10"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@+id/vi4"
+                    android:id="@+id/l5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Standard :"
+                        android:textColor="@color/tab_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tv_student_standard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:text="NA"
+                        android:layout_marginEnd="5dp"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/vi5"
+                    android:layout_below="@id/l5"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/grey10"
+                    />
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_btn_start"
+                android:layout_below="@id/view9"
+                android:background="@drawable/gredient_btn_bg"
+                android:text="Edit Profile"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

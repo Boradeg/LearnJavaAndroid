@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home2"
+        android:title="Starline" />
+
+
+    <item
+        android:id="@+id/navigation_prg_task"
+        android:icon="@drawable/code"
+        android:title="Program" />
+
+    <item
+        android:id="@+id/navigation_tutorial"
+        android:icon="@drawable/video_lesson"
+        android:title="Tutorial" />
+
+    <item
+        android:id="@+id/navigation_inter_que"
+        android:icon="@drawable/conversation"
+        android:title="Question" />
+
+    <item
+        android:id="@+id/navigation_quiz"
+        android:icon="@drawable/quiz"
+        android:title="Quiz" />
+
+</menu>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_nested"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+
+        android:src="@drawable/prog8"
+        />
+    <TextView
+        android:id="@+id/nested_item_text_tutorial"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Java Basics"
+        android:layout_toRightOf="@+id/img_nested"
+      android:layout_margin="5dp"
+        android:fontFamily="@font/roboto_bold"
+       />
+
+</RelativeLayout>

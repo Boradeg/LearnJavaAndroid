@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.javaLearningApp.HomeFragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_tutorialFragment"
+            app:destination="@id/navigation_tutorial" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_prg_task"
+        android:name="com.example.javaLearningApp.ProgramAndSyntaxFragment.ProgramAndSyntaxFragment"
+        tools:layout="@layout/fragment_program_and_syntax" />
+
+    <fragment
+        android:id="@+id/navigation_tutorial"
+        android:name="com.example.javaLearningApp.TutorialFragment.TutorialFragment"
+
+        tools:layout="@layout/fragment_tutorial" />
+    <fragment
+        android:id="@+id/navigation_inter_que"
+        android:name="com.example.javaLearningApp.QuestionsFragment.QuestionsFragment"
+
+        tools:layout="@layout/fragment_questions" />
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="com.example.javaLearningApp.QuizFragment.QuizFragment"
+
+        tools:layout="@layout/fragment_quiz" />
+</navigation>
